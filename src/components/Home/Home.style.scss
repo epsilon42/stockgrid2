@@ -1,0 +1,60 @@
+.Home {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  .Image,
+  .SignInSignUp {
+    width: 50%;
+    padding: 2rem;
+    button {
+      display: inline-block;
+      font-size: 1rem;
+      font-family: inherit;
+      font-weight: 700;
+      padding: 0.5rem 2rem;
+      margin-right: 1rem;
+      //   width: 100%;
+      border: 2px solid #87b5dc;
+      // background: #0f162d;
+      // background: transparent;
+      background: #0f162d;
+      //   color: #87b5dc;
+      color: white;
+      border-radius: 2rem;
+      cursor: pointer;
+      transition: 0.3s all cubic-bezier(0, 0, 0.2, 1);
+      outline: none;
+      margin-bottom: 1rem;
+      svg {
+        transform: translateY(2px);
+      }
+      &:hover {
+        background: #0f162d;
+        // color: #0f162d;
+        border-color: white;
+        color: white;
+      }
+    }
+  }
+  .SignInSignUp {
+    .subtext {
+      font-size: 1.5rem;
+      margin-top: 0;
+      font-weight: 700;
+    }
+  }
+
+  .Image {
+    text-align: right;
+    svg {
+      pointer-events: none;
+      max-width: 100%;
+      width: 24rem;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .SignInSignUp {
+  }
+}

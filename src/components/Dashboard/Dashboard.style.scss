@@ -1,0 +1,29 @@
+.Dashboard {
+  .Title {
+    // font-family: "Bungee", sans-serif;
+    font-size: 2rem;
+    // color: #c5c6c7;
+    color: #87b5dc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #1f2a50;
+    span {
+      color: white;
+    }
+  }
+  .Notice {
+    padding: 2rem;
+    border: 1px solid #1f2a50;
+    border-radius: 4px;
+    // color: #87b5dc;
+    display: flex;
+    background: rgba(0, 0, 0, 0.25);
+    .Icon {
+      color: #87b5dc;
+      font-size: 3rem;
+      padding-right: 2rem;
+    }
+    .Message {
+    }
+  }
+}

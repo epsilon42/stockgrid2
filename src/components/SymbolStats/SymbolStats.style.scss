@@ -1,0 +1,55 @@
+.SymbolStats {
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0.25rem;
+      padding-top: 0.25rem;
+      border-bottom: 1px solid #1f2a50;
+      //   font-size: 0.75rem;
+      &:last-of-type {
+        border-bottom: 0;
+      }
+      > div {
+        &:first-of-type {
+          font-weight: 700;
+          color: #87b5dc;
+        }
+        &:last-of-type {
+          text-transform: uppercase;
+          svg {
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+  }
+  #SymbolViewStockPrice {
+    font-size: 2rem;
+    // margin-left: 2rem;
+    .Price {
+      font-weight: 700;
+    }
+    .DayChange {
+    }
+    .DayChangePercent {
+      // margin-left: 0.5rem;
+    }
+    .DayChange,
+    .DayChangePercent {
+      font-size: 1.25rem;
+      svg {
+        transform: translate(1px, 2px);
+      }
+
+      &.up {
+        color: #4af17e;
+      }
+      &.down {
+        color: #ff4444;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.App {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  position: relative;
+
+  .MainContent {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .MobileModal {
+    color: white;
+    z-index: 10;
+    position: fixed;
+    width: calc(100% - 4rem);
+    height: calc(100vh - 4rem);
+    text-align: center;
+    background: #1f2a50;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+
+    .Icon {
+      position: relative;
+      font-size: 3rem;
+      height: 3rem;
+      .GoDeviceMobile,
+      .GoX {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .GoDeviceMobile {
+      }
+      .GoX {
+        // font-size: 4rem;
+        color: red;
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: inherit;
+      width: calc(50% - 1rem);
+      padding: 1rem;
+      border: 2px solid #87b5dc;
+      background: #0f162d;
+      color: white;
+      border-radius: 3rem;
+      cursor: pointer;
+      transition: 0.3s all cubic-bezier(0, 0, 0.2, 1);
+      outline: none;
+      &:hover {
+        background: #87b5dc;
+        color: #0f162d;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .MobileModal {
+      display: none;
+    }
+  }
+}

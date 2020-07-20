@@ -1,0 +1,28 @@
+.Logo {
+  // font-family: "Bungee", sans-serif;
+  font-size: 2rem;
+  color: #87b5dc;
+  margin-bottom: 1rem;
+  position: relative;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+
+  .stock {
+    color: white;
+  }
+  .grid {
+  }
+  .Version {
+    font-size: 0.5rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    letter-spacing: 1px;
+    text-transform: initial;
+    pointer-events: none;
+  }
+}

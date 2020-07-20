@@ -1,0 +1,70 @@
+.PortfolioTiles {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  .Tools {
+    position: absolute;
+    top: -4.25rem;
+    right: 0;
+    color: #87b5dc;
+    display: flex;
+    align-items: center;
+    .LastUpdated {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      padding-bottom: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .Delete,
+    .Refresh {
+      font-size: 2rem;
+      // transition: 0.3s all cubic-bezier(0, 0, 0.2, 1);
+      cursor: pointer;
+      svg {
+        transition: 0.3s all cubic-bezier(0, 0, 0.2, 1);
+      }
+      &:hover {
+        color: white;
+      }
+    }
+    .Delete {
+    }
+    .Refresh {
+      &:hover {
+        svg {
+          transform: rotate(45deg);
+        }
+      }
+      &.is-updating {
+        color: white;
+
+        svg {
+          animation: rotation 2s infinite linear;
+        }
+      }
+    }
+  }
+  .LoadingContainer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    .LoadingText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+    }
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(404deg);
+  }
+}
